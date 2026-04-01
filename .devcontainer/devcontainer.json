@@ -19,8 +19,8 @@
 
   "forwardPorts": [5173, 8000],
   "portsAttributes": {
-    "5173": { "label": "Frontend (Vite)", "onAutoForward": "notify" },
-    "8000": { "label": "Backend (FastAPI)", "onAutoForward": "notify" }
+    "5173": { "label": "Frontend (Vite)", "onAutoForward": "notify", "visibility": "public" },
+    "8000": { "label": "Backend (FastAPI)", "onAutoForward": "notify", "visibility": "public" }
   },
 
   "postCreateCommand": "corepack enable && corepack prepare yarn@stable --activate && pip install uv",
